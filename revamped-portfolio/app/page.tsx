@@ -16,13 +16,9 @@ export default function Home() {
         
         </div>
     </header>
-  
-    <section className="flex justify-between bg-white dark:bg-slate-900 p-4">
-    
-       
-    </section>
 
-    <section className="bg-white dark:bg-slate-900 text-gray-900 dark:text-white">
+
+    <section className="py-20 px-4 bg-white dark:bg-slate-900 text-gray-900 dark:text-white">
         <About></About>
     </section>
      
