@@ -29,15 +29,18 @@ const Testimonials = () => {
 
 
     return (
-    <div className="grid lg:grid-cols-2 lg:grid-rows-3 gap-10 md:grid-cols-1 md:grid-rows-7 md:gap-4 sm:grid-cols-1 sm:grid-rows-7 sm:gap-2">
+    <section className="gap-4 p-4">
+        <div className="grid lg:grid-cols-2 lg:grid-rows-3 gap-10 md:grid-cols-1 md:grid-rows-7 md:gap-4 sm:grid-cols-1 sm:grid-rows-7 sm:gap-2">
     
-    {praise.map((praiser, index) => 
-        <div key={index} className="bg-indigo-400/30 backdrop-blur-3xl backdrop-saturate-150 border-white/20 rounded-2xl p-3 shadow-md">
-            <p className="text-black dark:text-white mb-4">{praiser.quote}</p>
-        <p className="font-semibold text-gray-800 dark:text-white"><em>{praiser.name}</em></p>
-        </div>)}
+            {praise.map((praiser, index) => 
+                <div key={index} className="bg-indigo-400/30 backdrop-blur-3xl backdrop-saturate-150 border-white/20 rounded-2xl p-3 shadow-md">
+                    <p className="text-black dark:text-white mb-4">{praiser.quote}</p>
+                <p className="font-semibold text-gray-800 dark:text-white"><em>{praiser.name}</em></p>
+                </div>)}
 
-    </div>
+        </div>
+
+    </section>
     )
 }
 
